@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typeCheck": "tsc --noEmit"
 
   },
   "keywords": [],
