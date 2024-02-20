@@ -14,12 +14,13 @@ jobs:
       - name: Install node modules
         run: npm ci
       - name: Typecheck
-        run: npm run typeCheck
+        run: npm run typeCheck  
+      - name: Coverage report with vitest
+        run: npm i @vitest/coverage-v8
       - name: Run tests
         run: npm run test
 
-      - name: Coverage report with vitest
-        run: npm i @vitest/coverage-v8
+    
         
       #- name: Publish package
       #  run: npm -h
