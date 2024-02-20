@@ -17,8 +17,12 @@ jobs:
         run: npm run typeCheck
       - name: Run tests
         run: npm run test
-      - name: Publish package
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.WORKFLOW_SECRET }}
+
+      - name: Coverage report with vitest
+        run: npm i @vitest/coverage-v8
+        
+      #- name: Publish package
+      #  run: npm -h
+
       
+        
