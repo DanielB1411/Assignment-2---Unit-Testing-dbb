@@ -19,3 +19,4 @@ export function isDateBefore(date:Date, compareDate:Date):boolean {
 export function isSameDay(date:Date, compareDate:Date):boolean {
   return isEqual(date,compareDate)
 }
+

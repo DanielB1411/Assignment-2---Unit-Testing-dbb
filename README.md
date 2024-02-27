@@ -1,55 +1,58 @@
- # Assignment 2 - unit testing
+# eslint-plugin-no-console
+
+ban of console
+
+## Installation
+
+You'll first need to install [ESLint](https://eslint.org/):
+
+```sh
+npm i eslint --save-dev
+```
+
+Next, install `eslint-plugin-no-console`:
+
+```sh
+npm install eslint-plugin-no-console --save-dev
+```
+
+## Usage
+
+Add `no-console` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+
+```json
+{
+    "plugins": [
+        "no-console"
+    ]
+}
+```
 
 
-This assignment is meant to improve your unit testing skills and teach you a few best practices when it comes to working with external libraries.
+Then configure the rules you want to use under the rules section.
 
-This project is using an outdated date library. Your task is to write unit tests for the functions in `src/dateUtils.ts` and then replace the outdated library with a newer one.
-Since the library is abstracted the tests should still pass using the new library.
-
-Another task for you is to add type definition to the `dateUtils.ts` file. Please note that TypeScript is already set up, all you should need to do is to introduce types.
-
-
-**Group size:** 1 person
-
------
-
-## Prerequisite
-
-Make sure you have Node v20 installed before starting the assignment.
-* Select "Use this Template" and create a new repository using this as a template repo
-
-## Setup
-
-* `npm install`
-
-## Commands
-* `npm run test`
-    - This runs the test suite
+```json
+{
+    "rules": {
+        "no-console/rule-name": 2
+    }
+}
+```
 
 
-------------------
 
-## The assignment
+## Configurations
 
-Start by looking at `src/dateUtils.ts` and get familiar with the functions.
-
-Add Type definition to arguments and functions in `src/dateUtils.ts`.
-
-### **Commit your changes.**
-
-Go to `src/__tests__/dateUtils.test.ts` and add unit tests that cover each function, please note that some functions can, and should have, more than one unit test.
-
-### **Commit your changes.**
-
-Once you have written unit tests and feel comfortable with the coverage you have, start replacing the deprecated `moment` library with `date-fns`. There are similar functions available. Look at the documentation (https://date-fns.org/docs/Getting-Started) and you should be able to find functions that behave the same way.
-Your tests suite should not be touched at this point, the unit tests you wrote in the beginning should still be green, because the input and the output stays the same.
-
-### **Commit your changes.**
+<!-- begin auto-generated configs list -->
+TODO: Run eslint-doc-generator to generate the configs list (or delete this section if no configs are offered).
+<!-- end auto-generated configs list -->
 
 
---------
-## Handin
 
-Add me (arnif) as a contributor to the Github repo. There should be at least 3 commits that include each step described above.
-Add a link to the Github repo when turning in your solution to Canvas.
+## Rules
+
+<!-- begin auto-generated rules list -->
+TODO: Run eslint-doc-generator to generate the rules list.
+<!-- end auto-generated rules list -->
+
 

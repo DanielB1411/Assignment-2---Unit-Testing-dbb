@@ -20,11 +20,13 @@ jobs:
       - name: Coverage report with vitest
         run: npm i @vitest/coverage-v8
       - name: Run tests
-        run: npm run test -- --coverage
-      - name: Publish package
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
+      - name: Run eslint rules
+        run: npx eslint .\src\dateUtils.ts
+     
+     
+     #   run: npm publish
+   #     env:
+      #    NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
     
         
