@@ -22,7 +22,7 @@ jobs:
       - name: Run tests
         run: npm run test -- --coverage
       - name: Run eslint rules
-        run: npx eslint .\src\dateUtils.ts
+        run: npx eslint ./src/dateUtils.ts
      
      
      #   run: npm publish
