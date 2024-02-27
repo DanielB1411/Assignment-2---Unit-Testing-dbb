@@ -21,6 +21,8 @@ jobs:
         run: npm i @vitest/coverage-v8
       - name: Run tests
         run: npm run test -- --coverage
+      - name: install eslint
+        run: npm i eslint@latest
       - name: Run eslint rules
         run: npx eslint ./src/dateUtils.ts
      
