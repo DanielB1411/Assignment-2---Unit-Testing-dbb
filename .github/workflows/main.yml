@@ -20,6 +20,7 @@ jobs:
       - name: Coverage report with vitest
         run: npm i @vitest/coverage-v8
       - name: Run tests
+        run: npm run test -- --coverage
       - name: Run eslint rules
         run: npx eslint .\src\dateUtils.ts
      
